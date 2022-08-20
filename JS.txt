@@ -1,0 +1,55 @@
+Javascript je jedním z nejpopulárnější programovacích jazyků na světě. Vznikl v roce 1995.Založil ho 	Brendan Eich
+Velké společnosti jako Netflix PayPal pro své aplikace používají javascript.
+Dříve byl javasrcipt používám pouze v pro vytváření interaktivních webových stránek(efekty).
+
+Nyní již lze pomocí javascriptu vytvořit webové nebo mobilní aplikace sítové aplikace jako chat nebo video streaming služby, 
+nástroje příkazového řádku nebo i hry.
+
+
+
+  
+Původně se dal Javascript spouštět pouze v prohlížečích.
+v 2009 Mr Ryan Dahl vložil Javascipt engine z prohlížečů do programu C++, nazval tento program NODE
+
+S node můžeme spusti javascript mimo Internetový prohlížeč, tím pádem můžeme vytvářet backend pro 
+webové a mobliní aplikace.
+
+
+proměnné v javascriptu :  
+
+var - dříve to bylo jediná proměnná v javascriptu
+	protože lidé meli problémi s používní této proměnně v rozsahu funkcí 
+	byly vytvořený další dvě proměnné let a const , které se mohou použit 
+	v rozsahu bloků (if statementy nebo for loopy) místo funkčních rozsahů
+
+	funkční rozsah je dostupný všude v ve funkci
+	block scope(rozsah) je funkčí pouze  v block scopu
+	
+příklad s "var" , ktery bude fungovat : 
+			if (true) {
+			var varVariable = "this is true" }
+	    		console.log(varVariable)	 
+
+příklad s "let" nebo "const" mimo block , ktery nebude fungovat : 
+			if (true) {
+			let letVariable = "this is true"
+			const constVariable = "this is true"	 }
+	    		console.log(letVariable)
+			console.log(constVariable)		 
+
+nelze predeklarovat "let"
+priklad ktery nebude fungovat 
+	let letVariable ='true'
+	let letVariable ='false'
+s "var" lze predklarovat , coz je problem protoze se muze v kodu promenna omylem predeklarovat , kterou nechceme
+
+
+const -neumoznuje zmenu hodnoty , lze menit pouze properties v objectech
+priklad
+
+const number = 5
+numer = 6 , nenude fungovat
+
+const person = {name:'Adam'}
+person.name = 'Ales' , bude fungovat
+
