@@ -27,7 +27,8 @@ thirdArray = vals.filter(z => !z  )
 console.log(thirdArray)
 
 //----------------------------------------------
+// strings
 
 let text = "Today is a lovely   day. "
-let words = text.split(/\W+/).filter(x  => x.length > 2);
+let words = text.split(/\W+/).filter(x  => x.length );
 console.log(words)
